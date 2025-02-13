@@ -1,6 +1,4 @@
-import br.ufpb.dcx.joão.Disciplina;
-import br.ufpb.dcx.joão.SistemaGerenciaProfs;
-import br.ufpb.dcx.joão.SistemaGerenciaProfsMap;
+import br.ufpb.dcx.joão.professores.SistemaGerenciaProfsMap;
 
 import java.util.LinkedList;
 import java.util.List;
