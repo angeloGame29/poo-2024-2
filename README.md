@@ -1,5 +1,6 @@
-# poo2024-2
-Códigos da disciplina POO do período 2024-2
+# Poo-2024-2
+Códigos da disciplina de POO do período 2024-2 - Ângelo
 
-- Sistema de veiculos
-- Sistema de amigo secreto
+- Sistema de Veiculos
+- Sistema de Amigo Secreto
+- Sistema Loja de Roupas

@@ -1,5 +1,7 @@
 package br.ufpb.dcx.joao.lojaRoupa;
 
+import java.util.List;
+
 public interface SistemaLojaRoupas {
     public List<Roupa> pesquisaRoupasPorTamanho(Tamanho tamnhoRoupa);
     public List<Roupa> pesquisaRoupasComDescricaoComecandoCom(String prefixodescricao);
