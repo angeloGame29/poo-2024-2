@@ -1,4 +1,4 @@
-package br.ufpb.dcx.joao.lojaRoupa;
+package br.ufpb.dcx.angelo.lojaRoupa;
 
 public class RoupaInexistenteException extends Exception {
 }

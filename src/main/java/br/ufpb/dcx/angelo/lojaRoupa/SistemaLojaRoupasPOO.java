@@ -1,4 +1,4 @@
-package br.ufpb.dcx.joao.lojaRoupa;
+package br.ufpb.dcx.angelo.lojaRoupa;
 
 import java.util.List;
 
