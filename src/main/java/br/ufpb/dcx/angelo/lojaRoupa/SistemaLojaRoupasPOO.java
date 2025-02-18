@@ -22,17 +22,19 @@ public class SistemaLojaRoupasPOO implements SistemaLojaRoupas {
             }
 
         }
-        return List.of();
+        return roupasPesquisadas;
     }
 
     @Override
     public List<Roupa> pesquisaRoupasComDescricaoComecandoCom(String prefixodescricao) {
         return List.of();
+        //TODO IMPLEMENTAR
     }
 
     @Override
     public Tamanho consultaTamanhoDaRoupa(String codigoRoupa) throws RoupaInexistenteException {
         return null;
+        //TODO IMPLEMENTAR
     }
 
     @Override
@@ -47,11 +49,21 @@ public class SistemaLojaRoupasPOO implements SistemaLojaRoupas {
 
     @Override
     public void alteraQuantidadeDeRoupaNoEstoque(String codigoRoupa, int novaQuantidade) throws RoupaInexistenteException {
-
+        //TODO IMPLEMENTAR
     }
 
     @Override
     public Roupa pesquisaRoupa(String codigoRoupa) throws RoupaInexistenteException {
+        if (this.roupasMap.containsKey(codigoRoupa)) {
+            throw new RoupaInexistenteException("Roupa não existe no sistema:" + codigoRoupa);
+        } else {
+            for(Roupa r: roupasMap.values()){
+                if(r.getCodigo().equals(codigoRoupa)){
+                  Roupa roupa = r;
+                }
+            }
+        }
         return null;
+        //TODO IMPLEMENTAR
     }
 }
