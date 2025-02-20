@@ -2,7 +2,6 @@
 Códigos da disciplina de POO do período 2024.2 - Ângelo
 
 > <span style="color: RED"> MEUS SISTEMAS: </span>
-- Sistema de Veiculos
 - Sistema de Amigo Secreto
 - Sistema Loja de Roupas
 
