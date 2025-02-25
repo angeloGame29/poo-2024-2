@@ -1,0 +1,29 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    font-weight: 600;
+    width: 100vr;
+    display: flex;
+    flex-direction: column;
+}
+
+header{
+    padding: 10px;
+    background-color: green;
+    display:flex;
+    justify-content: center;
+    text-align: center:
+}
+
+section h2{
+    color: green;
+    padding:5px;
+    padding-left: 15px;
+}
+section p{
+    padding-left: 10px;
+    font-weight: 400;
+}
