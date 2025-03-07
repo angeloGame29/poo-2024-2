@@ -3,7 +3,7 @@
 <div> <img style="width:400px" src="img/poo25.png" alt="#"> </div>
 Códigos da disciplina de POO do período 2024.2 - Ângelo
 
-><h2> <span style="color: #F9751A"> MEUS SISTEMAS: </span></h2>
+><h3> <span style="color: #F9751A"> MEUS SISTEMAS: </span></h3>
 
 <div>
     <li>
@@ -11,6 +11,9 @@ Códigos da disciplina de POO do período 2024.2 - Ângelo
     </li>
     <li>
         Sistema Loja de Roupas
+    </li>
+    <li>
+        Sitema de Vendas
     </li>
 </div>
 
