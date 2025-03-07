@@ -8,6 +8,7 @@ body{
     width: 100vr;
     display: flex;
     flex-direction: column;
+    background-color: #f9f5e2;
 }
 
 header{
@@ -25,5 +26,9 @@ section h2{
 }
 section p{
     padding-left: 10px;
+    font-weight: 400;
+}
+section li {
+    padding: 5px 5px 5px 15px;
     font-weight: 400;
 }
