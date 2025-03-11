@@ -24,7 +24,7 @@ public class TelaDeLoginVendaGUI extends JFrame {
         JLabel lblUsuario = new JLabel("USUÁRIO:");
         JLabel lblSenha = new JLabel("SENHA:");
         JTextField txtUsuario = new JTextField("angelo");
-        JPasswordField pwdSenha = new JPasswordField();
+        JPasswordField pwdSenha = new JPasswordField("angelo123");
         JButton btnEntrar = new JButton("ENTRAR");
 
         //=========================[ ESTILIZAÇÃO DOS ELEMENTOS ]==================================
@@ -50,7 +50,7 @@ public class TelaDeLoginVendaGUI extends JFrame {
         pwdSenha.setForeground(Color.decode("#e8da5e"));
         pwdSenha.setBorder(null);
 
-        btnEntrar.setBounds(300,280,240,25);
+        btnEntrar.setBounds(300,285,240,30);
         btnEntrar.setBackground(Color.decode("#487d76"));
         btnEntrar.setForeground(Color.decode("#e8da5e"));
         btnEntrar.setFont(new Font("Serif",Font.BOLD,15));
