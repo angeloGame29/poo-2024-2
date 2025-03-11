@@ -9,13 +9,15 @@ import java.awt.*;
 public class MeuProgramaVendaGUI extends JFrame {
     SistemaVendas sistema = new SistemaVendasDeRoupas();
     JMenuBar menuBarra = new JMenuBar();
+    JButton btnCadastrar, btnPesquisar, btnCalcularVendas, btnVerificarProduto;
+
     public MeuProgramaVendaGUI (){
         //=========================[ JANELA PRINCIPAL ]==================================
         setTitle("MENU DE VENDAS");
         setSize(600,550);
         setLocationRelativeTo(null);
         getContentPane().setBackground(Color.decode("#4b4452"));
-        setLayout(null);
+        setLayout(new BorderLayout());
 
         //============================[ ELEMENTOS ]===============================
         JMenu menuGestao = new JMenu("GERENCIAMENTO");
@@ -46,6 +48,29 @@ public class MeuProgramaVendaGUI extends JFrame {
         menuSistema.add(existeProduto);
         menuSistema.add(existeVenda);
 
+        btnCadastrar = new JButton("CADASTRAR");
+        btnCadastrar.setFocusable(false);
+        btnCadastrar.setCursor(Cursor.getPredefinedCursor(Cursor.HAND_CURSOR));
+
+        btnCalcularVendas = new JButton("CALCULAR");
+        btnCalcularVendas.setFocusable(false);
+        btnCalcularVendas.setCursor(Cursor.getPredefinedCursor(Cursor.HAND_CURSOR));
+
+        btnPesquisar = new JButton("PESQUISAR");
+        btnPesquisar.setFocusable(false);
+        btnPesquisar.setCursor(Cursor.getPredefinedCursor(Cursor.HAND_CURSOR));
+
+        btnVerificarProduto = new JButton("VERIFICAR");
+        btnVerificarProduto.setFocusable(false);
+        btnVerificarProduto.setCursor(Cursor.getPredefinedCursor(Cursor.HAND_CURSOR));
+
+        JToolBar toolPesquisar = new JToolBar();
+        JLabel lblPesquisar = new JLabel("PESQUISAR: ");
+        JTextField txtPesquisar = new JTextField(20);
+        toolPesquisar.add(lblPesquisar);
+        toolPesquisar.add(txtPesquisar);
+        toolPesquisar.setFloatable(false);
+
         //===================[ ESTILIZAÇÃO DOS ELEMENTOS ]========================================
 
         //======================[ AÇÕES DOS ELEMENTOS ]=====================================
@@ -56,5 +81,11 @@ public class MeuProgramaVendaGUI extends JFrame {
         menuBarra.add(menuConsulta);
         menuBarra.add(menuOperacao);
         menuBarra.add(menuSistema);
+
+        this.add(toolPesquisar,BorderLayout.PAGE_START);
+        this.add(btnCadastrar,BorderLayout.WEST);
+        this.add(btnCalcularVendas,BorderLayout.CENTER);
+        this.add(btnPesquisar,BorderLayout.EAST);
+        this.add(btnVerificarProduto,BorderLayout.AFTER_LINE_ENDS);
     }
 }
