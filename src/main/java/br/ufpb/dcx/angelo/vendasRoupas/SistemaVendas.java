@@ -1,6 +1,7 @@
 package br.ufpb.dcx.angelo.vendasRoupas;
 
 import java.util.Collection;
+import java.util.List;
 
 public interface SistemaVendas {
 
@@ -71,4 +72,5 @@ public interface SistemaVendas {
      */
     String pesquisaDescricaoDoProduto (String codigoProduto) throws ProdutoNaoExisteException;
 
+    public List<Venda> pesquisarVendasParaOSegundoSemestre();
 }

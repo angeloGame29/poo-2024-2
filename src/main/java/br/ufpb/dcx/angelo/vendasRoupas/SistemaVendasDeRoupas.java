@@ -96,4 +96,16 @@ public class SistemaVendasDeRoupas implements SistemaVendas {
             throw new ProdutoNaoExisteException ("Não existe nenhum produto com o código "+codigoProduto);
         }
     }
+    public List<Venda> pesquisarVendasParaOSegundoSemestre(){
+        Mes [] mes = {Mes.JULHO, Mes.AGOSTO, Mes.SETEMBRO, Mes.OUTUBRO,  Mes.NOVEMBRO, Mes.DEZEMBRO};
+        List<Venda> vendasDoSegundoSemestre = new ArrayList<>();
+        for (Venda v: this.vendas){
+            for(Mes m: mes){
+                if (v.getMes().equals(m)){
+                    vendasDoSegundoSemestre.add(v);
+                }
+            }
+        }
+        return vendasDoSegundoSemestre;
+    }
 }
