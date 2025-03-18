@@ -32,3 +32,11 @@ section li {
     padding: 5px 5px 5px 15px;
     font-weight: 400;
 }
+
+label {
+    padding: 15px;
+}
+
+div{
+    padding:5px;
+}
