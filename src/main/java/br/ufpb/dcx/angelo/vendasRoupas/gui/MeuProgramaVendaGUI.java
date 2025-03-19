@@ -10,6 +10,7 @@ import java.awt.*;
 public class MeuProgramaVendaGUI extends JFrame {
     SistemaVendas sistema = new SistemaVendasDeRoupas();
     JMenuBar menuBarra = new JMenuBar();
+    ImageIcon lupa = new ImageIcon("./imgsVenda/lupa.png");
     JButton btnCadastrar, btnPesquisar, btnCalcularVendas, btnVerificarProduto,btnSair;
 
     public MeuProgramaVendaGUI (){
@@ -54,15 +55,15 @@ public class MeuProgramaVendaGUI extends JFrame {
 
         btnCalcularVendas = new JButton("CALCULAR");
 
-        btnPesquisar = new JButton("PESQUISAR");
+        btnPesquisar = new JButton("PESQUISAR",lupa);
 
         btnVerificarProduto = new JButton("VERIFICAR");
 
         btnSair = new JButton("SAIR");
 
         JToolBar toolPesquisar = new JToolBar();
-        JLabel lblPesquisar = new JLabel("          PESQUISAR: ");
-        JTextField txtPesquisar = new JTextField(20);
+        JLabel lblPesquisar = new JLabel("    |     PESQUISAR: ");
+        JTextField txtPesquisar = new JTextField();
         toolPesquisar.add(lblPesquisar);
         toolPesquisar.add(txtPesquisar);
         toolPesquisar.setFloatable(false);
@@ -100,12 +101,23 @@ public class MeuProgramaVendaGUI extends JFrame {
 
         menuBarra.setBackground(Color.decode("#487d76"));
         menuBarra.setBorder(null);
+
         toolPesquisar.setBackground(Color.decode("#487d76"));
+        toolPesquisar.setBorder(null);
+
         lblPesquisar.setForeground(Color.decode("#e8da5e"));
+
+        txtPesquisar.setBackground(Color.decode("#4b4452"));
+        txtPesquisar.setFont(new Font("serif", Font.BOLD,20));
+        txtPesquisar.setForeground(Color.decode("#e8da5e"));
+        txtPesquisar.setBorder(null);
+
         menuGestao.setForeground(Color.decode("#e8da5e"));
         menuConsulta.setForeground(Color.decode("#e8da5e"));
         menuOperacao.setForeground(Color.decode("#e8da5e"));
         menuSistema.setForeground(Color.decode("#e8da5e"));
+
+
 
         //======================[ AÇÕES DOS ELEMENTOS ]=====================================
 
