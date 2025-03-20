@@ -7,13 +7,16 @@ Códigos da disciplina de POO do período 2024.2 - Ângelo
 
 <div>
     <li>
-        Sistema de Amigo Secreto
+        Sistema Amigo Secreto
     </li>
     <li>
         Sistema Loja de Roupas
     </li>
     <li>
-        Sitema de Vendas
+        Sitema de Vendas de Roupa
+    </li>
+    <li>
+        Sitema de Atrativos Turisticos
     </li>
 </div>
 
