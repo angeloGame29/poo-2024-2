@@ -13,6 +13,7 @@ public class AtrativoTuristico {
     public AtrativoTuristico (String nome, String descricao,TipoAtrativo tipo, List<String> sitesParaMaisInfo){
         this.nome = nome;
         this.descricao = descricao;
+        this.tipo = tipo;
         this.sitesParaMaisInfo = sitesParaMaisInfo;
     }
 
@@ -21,11 +22,11 @@ public class AtrativoTuristico {
     }
 
     public boolean ehDoTipo(TipoAtrativo tipo){
-        return this.tipo ==tipo;
+        return this.tipo == tipo;
     }
 
     public String getDescricao() {
-        return descricao;
+        return this.descricao;
     }
     public void setDescricao(String novaDescricao){
         this.descricao = novaDescricao;
@@ -39,19 +40,19 @@ public class AtrativoTuristico {
     }
 
     public TipoAtrativo getTipo() {
-        return tipo;
+        return this.tipo;
     }
     public void setTipo(TipoAtrativo novoTipo){
         this.tipo = novoTipo;
     }
 
     public List<String> getSitesParaMaisInfo() {
-        return sitesParaMaisInfo;
+        return this.sitesParaMaisInfo;
     }
     public void setSitesParaMaisInfo (List<String> novosSites){
         this.sitesParaMaisInfo = novosSites;
     }
-    public void adicionaSitesMaisInfo(String site){
+    public void adicionaSiteMaisInfo(String site){
         this.sitesParaMaisInfo.add(site);
     }
 

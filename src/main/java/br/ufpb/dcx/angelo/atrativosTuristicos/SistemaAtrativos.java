@@ -37,9 +37,8 @@ public interface SistemaAtrativos {
      * Conta quantos atrativos com o mesmo tipo há no sistema
      * @param tipo O tipo do atrativo a ser contado.
      * @return A quantidade de atrativos com aquele tipo.
-     * @throws AtrativoNaoExisteException Caso não exista no sistema esse atrativo.
      */
-    int contaAtrativosDoTipo(TipoAtrativo tipo) throws AtrativoNaoExisteException;
+    int contaAtrativosDoTipo(TipoAtrativo tipo);
 
     /**
      * Verifica se o atrativo existe no sistema

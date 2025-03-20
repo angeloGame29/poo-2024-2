@@ -1,5 +1,7 @@
 package br.ufpb.dcx.angelo.atrativosTuristicos;
 
 public class AtrativoJaExisteException extends Exception {
-//    TODO IMPLEMENTAR
+    public AtrativoJaExisteException (String msg){
+        super (msg);
+    }
 }
