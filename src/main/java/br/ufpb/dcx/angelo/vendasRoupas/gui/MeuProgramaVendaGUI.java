@@ -2,6 +2,8 @@ package br.ufpb.dcx.angelo.vendasRoupas.gui;
 
 import br.ufpb.dcx.angelo.vendasRoupas.SistemaVendas;
 import br.ufpb.dcx.angelo.vendasRoupas.SistemaVendasDeRoupas;
+import br.ufpb.dcx.angelo.vendasRoupas.controller.VendaCadastraProdutoController;
+import br.ufpb.dcx.angelo.vendasRoupas.controller.VendaCadastraVendasController;
 
 import javax.swing.*;
 import javax.swing.border.Border;
@@ -120,6 +122,8 @@ public class MeuProgramaVendaGUI extends JFrame {
 
 
         //======================[ AÇÕES DOS ELEMENTOS ]=====================================
+        btnCadastrar.addActionListener(new VendaCadastraProdutoController(sistema,this));
+        itemCadastrarProduto.addActionListener(new VendaCadastraProdutoController(sistema, this));
 
         //========================[ ADD ELEMENTOS ]===================================
         setJMenuBar(menuBarra);
