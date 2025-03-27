@@ -23,24 +23,33 @@ public class MeuSistemaGerenciaDeTempo implements SistemaGerenciaDeTempo {
 
     @Override
     public Collection<Tarefa> pesquisarTarefasDaCategoria(CategoriaTarefa categoriaTarefa) {
-        Collection<Tarefa> tarefasPesquisadas = new ArrayList<>();
-        for (Tarefa t : this.tarefas.values()){
-            if (t.getCategoria().equals(categoriaTarefa)){
-                tarefasPesquisadas.add(t);
-            }
-        }
-        return  tarefasPesquisadas;
+        //=======================[ ITERAÇÃO EXTERNA ]==============================
+//        Collection<Tarefa> tarefasPesquisadas = new ArrayList<>();
+//        for (Tarefa t : this.tarefas.values()){
+//            if (t.getCategoria().equals(categoriaTarefa)){
+//                tarefasPesquisadas.add(t);
+//            }
+//        }
+//        return  tarefasPesquisadas;
+        //=======================[ ITERAÇÃO INTERNA ]==============================
+        return this.tarefas.values().stream().filter(tarefa -> tarefa.getCategoria().equals(categoriaTarefa)).toList();
+        //========================[ EXPLICANDO PASSO A PASSO ]===============================================
+        //this.tarefas.values() -> Obtém todas as tarefas do mapa.
+        //stream() -> Converte tudo em um Stream, assim permitindo manipular tudo de forma declarativa.
+        //Filter() -> Filtra tudo deixando apenas as tarefas cuja categoria seja igual a do parâmetro.
+        //tarefa -> Representa cada elemento do fluxo [cada objeto Tarefa].
     }
 
     @Override
     public Collection<Tarefa> pesquisarTarefasQueDuraramMaisDe(int tempoEmMinutos) {
-        Collection<Tarefa> tarefasPesquisadas = new ArrayList<>();
-        for(Tarefa t : this.tarefas.values()){
-            if (t.getTempoTarefaEmMinutos() > tempoEmMinutos){
-                tarefasPesquisadas.add(t);
-            }
-        }
-        return tarefasPesquisadas;
+//        Collection<Tarefa> tarefasPesquisadas = new ArrayList<>();
+//        for(Tarefa t : this.tarefas.values()){
+//            if (t.getTempoTarefaEmMinutos() > tempoEmMinutos){
+//                tarefasPesquisadas.add(t);
+//            }
+//        }
+//        return tarefasPesquisadas;
+        return this.tarefas.values().stream().filter(tarefa -> tarefa.getTempoTarefaEmMinutos() > tempoEmMinutos).toList();
     }
 
     @Override
@@ -67,13 +76,14 @@ public class MeuSistemaGerenciaDeTempo implements SistemaGerenciaDeTempo {
 
     @Override
     public Collection<Tarefa> pesquisarTarefasPorDescricao(String descricaoTarefa) {
-        Collection<Tarefa> tarefasPesquisadas = new ArrayList<>();
-        for (Tarefa t : this.tarefas.values()){
-            if (t.getDescricao().equals(descricaoTarefa)){
-                tarefasPesquisadas.add(t);
-            }
-        }
-        return  tarefasPesquisadas;
+//        Collection<Tarefa> tarefasPesquisadas = new ArrayList<>();
+//        for (Tarefa t : this.tarefas.values()){
+//            if (t.getDescricao().equals(descricaoTarefa)){
+//                tarefasPesquisadas.add(t);
+//            }
+//        }
+//        return  tarefasPesquisadas;
+        return this.tarefas.values().stream().filter(tarefa -> tarefa.getDescricao().equals(descricaoTarefa)).toList();
     }
 
     @Override
