@@ -5,21 +5,21 @@ Códigos da disciplina de POO do período 2024.2 - Ângelo
 
 ><h3> <span style="color: #F9751A"> MEUS SISTEMAS: </span></h3>
 
-<div>
+<span>
     <li>
-        Sistema Amigo Secreto
+        <a href="https://github.com/angeloGame29/poo-2024-2/tree/main/src/main/java/br/ufpb/dcx/angelo/amigoSecreto" >Sistema Amigo Secreto</a>
     </li>
     <li>
-        Sistema Loja de Roupas
+        <a href="https://github.com/angeloGame29/poo-2024-2/tree/main/src/main/java/br/ufpb/dcx/angelo/lojaRoupa" >Sistema Loja de Roupas</a>
     </li>
     <li>
-        Sitema de Vendas de Roupa
+        <a href="https://github.com/angeloGame29/poo-2024-2/tree/main/src/main/java/br/ufpb/dcx/angelo/vendasRoupas" >Sitema de Vendas de Roupa</a>
     </li>
     <li>
-        Sitema de Atrativos Turisticos
+        <a href="https://github.com/angeloGame29/poo-2024-2/tree/main/src/main/java/br/ufpb/dcx/angelo/atrativosTuristicos" >Sitema de Atrativos Turisticos</a>
     </li>
     <li>
         <a href="https://github.com/angeloGame29/poo-2024-2/tree/main/src/main/java/br/ufpb/dcx/angelo/gerenciadorDeTarefas" >Sitema de Gerenciamento de Tarefas</a>
     </li>
-</div>
+</span>
 
