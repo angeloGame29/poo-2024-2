@@ -18,5 +18,8 @@ Códigos da disciplina de POO do período 2024.2 - Ângelo
     <li>
         Sitema de Atrativos Turisticos
     </li>
+    <li>
+        <a href="https://github.com/angeloGame29/poo-2024-2/tree/main/src/main/java/br/ufpb/dcx/angelo/gerenciadorDeTarefas" >Sitema de Gerenciamento de Tarefas</a>
+    </li>
 </div>
 
