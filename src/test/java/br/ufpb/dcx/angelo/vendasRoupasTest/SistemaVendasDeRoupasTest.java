@@ -1,9 +1,6 @@
 package br.ufpb.dcx.angelo.vendasRoupasTest;
 
-import br.ufpb.dcx.angelo.vendasRoupas.Mes;
-import br.ufpb.dcx.angelo.vendasRoupas.SistemaVendas;
-import br.ufpb.dcx.angelo.vendasRoupas.SistemaVendasDeRoupas;
-import br.ufpb.dcx.angelo.vendasRoupas.Venda;
+import br.ufpb.dcx.angelo.vendasRoupas.*;
 import org.junit.jupiter.api.Test;
 
 import static org.junit.Assert.assertEquals;
@@ -30,5 +27,24 @@ public class SistemaVendasDeRoupasTest {
         sistema.cadastrarVendas("015",55,Mes.SETEMBRO,2024);
         Venda venda = new Venda("015",55,Mes.SETEMBRO,2024);
         assertEquals(venda.getCodigoProduto(), sistema.pesquisarVendasParaOSegundoSemestre().get(0).getCodigoProduto());
+    }
+
+    @Test
+    public void testaPesquisarTodaasAsVendas() throws Exception{
+        SistemaVendas sistema = new SistemaVendasDeRoupas();
+        sistema.cadastrarProduto("015","casaco");
+        sistema.cadastrarProduto("003","bermuda");
+        sistema.cadastrarVendas("015",55,Mes.SETEMBRO,2024);
+        sistema.cadastrarVendas("003", 25.5,Mes.SETEMBRO,2024);
+        assertEquals(2, sistema.pesquisarTodasAsVendas().size());
+        assertEquals(80.5, sistema.obterValorTotalVendasMes(Mes.SETEMBRO, 2024), 0.01);
+    }
+
+    @Test
+    public void testaPesquisarTodosOsProdutos() throws Exception {
+        SistemaVendas sistema = new SistemaVendasDeRoupas();
+        sistema.cadastrarProduto("015", "casaco");
+        sistema.cadastrarProduto("003", "bermuda");
+        assertEquals(2, sistema.pesquisarTodosOsProdutos().size());
     }
 }
